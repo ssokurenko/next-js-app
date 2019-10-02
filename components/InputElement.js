@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import HistoryLog from './HistoryLog'
+import * as moment from 'moment'
 
 const InputElement = () => {
   const [inputText, setInputText] = useState('')
@@ -10,7 +12,7 @@ const InputElement = () => {
   }
 
   const buildEvent = text => {
-    const timestamp = new Date().toUTCString()
+    const timestamp = moment(new Date()).format('DD.MM.YYYY, HH:mm:ss')
     return {
       text, timestamp
     }
@@ -26,9 +28,7 @@ const InputElement = () => {
       </p>
       <div>
         <h3>Typing history</h3>
-        <ul>
-          {historyEvents.map((event, index) => <li key={index}>{event.timestamp}: {event.text}</li>)}
-        </ul>
+        <HistoryLog historyEvents={historyEvents} />
       </div>
     </div>
   )
