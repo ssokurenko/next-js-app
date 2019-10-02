@@ -1,0 +1,23 @@
+{
+  "name": "next-js-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssokurenko/next-js-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssokurenko/next-js-app/issues"
+  },
+  "homepage": "https://github.com/ssokurenko/next-js-app#readme"
+}
