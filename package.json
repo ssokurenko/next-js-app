@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ssokurenko/next-js-app#readme",
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "next": "^9.0.7",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
